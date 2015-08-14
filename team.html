@@ -30,53 +30,19 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#injectNavbar").load("navbar.html");
+    });
+    </script>
+
 </head>
 
 <body>
 
-    <div id="title" class="brand">
-        <img src="img/sujlogo.png" alt="" style="left: 50%"> Princeton Men's Club Soccer
-    </div>
-    <div class="address-bar">An Elite Club Sports Team</div>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">PMCS</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="team.html">Officers</a>
-                    </li>
-                    <li>
-                        <a href="schedule.html">Schedule</a>
-                    </li>
-                    <li>
-                        <a href="register.html">Tryouts</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <div id="injectNavbar"></div>
 
     <div class="container">
         <div class="row">
